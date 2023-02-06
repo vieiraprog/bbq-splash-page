@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    font-size: 1rem;
+}
+
+/*=========
+TYPOGRAPHY
+==========*/
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    width: 300px;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    font-weight: 900;
+    color: #404040;
+    margin-bottom: 0;
+    margin-top: 2em;
+}
+
+strong { font-weight: 900; }
+
+.subtitle { 
+    font-size: 1.313rem;
+    width: 400px;
+ }
+
+.top-text {
+    border-top: 8px solid #f18119;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+    padding-top: 2px;
+    margin-top: 0;
+    order: -1;
+}
+
+.subtitle,
+.top-text,
+.register {
+    text-transform:uppercase;
+    color:#f18119;
+    font-weight: 900;
+}
+
+.register { margin-top: 0; }
+
+.top-text,
+.fine-print,
+.btn-primary {
+    font-size: .625rem;
+    letter-spacing: 1px;
+}
+
+.body-text {
+    font-weight: 300;
+    color: #5A5A5A;
+}
+
+.fine-print { color: #989898; }
+
+/*=======
+LAYOUT
+========*/
+
+.intro {
+    background-image: url(../img/ribs.jpg);
+    background-color:#404040;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.main { text-align: center; }
+
+.main > * {
+    width: 350px;
+}
+
+.fine-print {
+    width: 200px;
+}
+
+.intro > *,
+.main > * {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-----form-----*/
+
+.email-collector {
+    width: 50%;
+    max-width: 250px;
+}
+
+input,
+.btn-primary {
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    margin-bottom: .75em;
+    text-align: center;
+    border: 1px solid #818181;
+    padding: .7em .25em;
+}
+
+::placeholder {
+    color:#989898;
+}
+
+.btn-primary {
+    border: none;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1.2em .25em;
+    background-image: linear-gradient(to left, #ff713b, #ffa51d);
+    transition: transform .5s;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+    transform:scale(1.05);
+}
+
+@media (min-width: 650px) {
+
+    body { font-size: 1.125rem; }
+
+    h1 { 
+        font-size: 3.5rem; 
+        width: 60%;
+        max-width: 450px;
+    }
+
+    h2 { font-size: 1.75rem; }
+
+    .subtitle {
+        width: 80%;
+    }
+
+    .container {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .intro {
+        width: 55%;
+    }
+
+    .main {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main > * {
+        width: 80%;
+        max-width: 400px;
+    }
+    
+    input,
+    .btn-primary {
+        width: 80%;
+    }
+}
