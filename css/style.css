@@ -81,9 +81,13 @@ LAYOUT
     justify-content: space-between;
     text-align: center;
     min-height: 50vh;
+    min-width: 400px;
 }
 
-.main { text-align: center; }
+.main { 
+    text-align: center;
+    min-width: 400px;
+}
 
 .main > * {
     width: 350px;
@@ -102,7 +106,7 @@ LAYOUT
 /*-----form-----*/
 
 .email-collector {
-    width: 50%;
+    width: 60%;
     max-width: 250px;
 }
 
